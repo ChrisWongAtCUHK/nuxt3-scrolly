@@ -4,6 +4,13 @@ import { watch } from "vue";
 
 const route = useRoute();
 const router = useRouter();
+
+onMounted(() => {
+  setTimeout(()=> {
+    const scrollY = useState("counter");
+    window.scroll(0, scrollY.value);
+  }, 10)
+});
 </script>
 
 <template>
