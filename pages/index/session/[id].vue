@@ -7,7 +7,7 @@ const router = useRouter();
 
 onMounted(() => {
   setTimeout(()=> {
-    const scrollY = useState("counter");
+    const scrollY = useState("scrollY");
     window.scroll(0, scrollY.value);
   }, 10)
 });
